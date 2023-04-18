@@ -1,0 +1,62 @@
+//Colors
+$dark-grey: #2e2e2e;
+$light-grey: #efefef;
+$black: #000;
+$white: #fff;
+$red: #A42c2c;
+$link-hover-red: #832323;
+$link-active-red: #621a1a;
+$light-red: #f94343;
+$dark-red: #4f1515;
+$green: #2ca42c;
+$blue: #2c2ca4;
+$yellow: #fce303;
+
+//Spacing
+$sp-2: 2px;
+$sp-4: 4px;
+$sp-8: 8px;
+$sp-12: 12px;
+$sp-16: 16px;
+$sp-20: 20px;
+$sp-24: 24px;
+
+//Font Size
+$ft-11: 11px;
+$ft-12: 12px;
+$ft-16: 16px;
+$ft-20: 20px; 
+$ft-24: 24px;
+$ft-36: 36px;
+$ft-48: 48px;
+
+.container{
+    padding: 0 25px; 
+    width: 100%; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+h1{ 
+    font-size: $ft-48; 
+}
+h2{
+    font-size: $ft-36;
+}
+h3{
+    font-size: $ft-24;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: $link-hover-red !important; 
+}
+a:active{
+    color: $link-active-red !important; 
+}
+a:visited{
+    color: inherit; 
+}
+

@@ -1,0 +1,17 @@
+@import "../../../vars.scss";
+
+.header{
+    background-color: $white;
+}
+
+.header-content{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.header-text{
+    color: $red;
+}
+
+
