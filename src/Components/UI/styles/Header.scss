@@ -1,17 +1,46 @@
 @import "../../../vars.scss";
 
 .header{
-    background-color: $white;
+    background-color: $dark-grey;
+    position: fixed;
+    width:100%; 
+    z-index: 100; 
+    display:flex;
 }
 
 .header-content{
     width: 100%; 
     display: flex; 
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 10%; 
 }
 
 .header-text{
-    color: $red;
+    color: $yellow;
 }
-
-
+.header-content .code-snippet{
+    font-size: $ft-16;
+}
+.navigation-container{
+    display:flex;
+}
+.navigation{
+    display:flex;
+    padding: 0 5px;
+    margin: 0px;
+}
+.navigation-list-items{
+    list-style:none;
+}
+.navigation-list-items .code-array-word{
+    color: $green;
+    font-size: $ft-16;
+}
+.navigation-list-items .code-array-word:hover{
+    opacity: .6; 
+}
+.navigation-list-items .code-array-word span{
+    color: $white;
+    margin-right: 5px;
+}

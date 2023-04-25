@@ -1,0 +1,71 @@
+@import '../../../vars.scss';
+
+//About Me Section styles
+.about-me-section{ 
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-grey;
+    position: relative; 
+    display:flex;
+    align-items: center;
+}
+.about-me-container{
+    width: 800px;
+    padding: $sp-16;
+}
+.code-snippet{
+    font-size: $ft-16;
+    margin: 0px; 
+}
+.variable-color{
+    font-size: $ft-16; 
+}
+.code-snippet-name{
+    color: $icy-blue;
+    font-size: $ft-72;
+    margin-top: 0px;
+    span{
+        color: $white;
+        font-size: $ft-20;
+    }
+}
+.code-array-word{
+    list-style: none;
+    color: $orange;
+    font-size: $ft-24;
+    span{
+        color: $white;
+    }
+}
+
+.fade-1{
+    animation: fadeIn 2s;
+}
+.fade-2{
+    animation: fadeInSlow 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        transform:translateY(-10px);
+    }
+    100% {
+        opacity: 1; 
+        transform:translateY(0px);
+    }
+}
+@keyframes fadeInSlow{
+    0%{
+        opacity: 0;
+        transform:translateY(-10px);
+    }
+    25%{
+        opacity: 0;
+        transform:translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
