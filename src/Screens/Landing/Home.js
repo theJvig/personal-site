@@ -1,12 +1,14 @@
 import React from 'react'; 
-import AboutMeSection from './Home/AboutMeSection';
+import Landing from './Home/Landing';
+import AboutSection from './Home/AboutSection';
 import './styles/Home.scss'
 
 const Home = () => {
 
     return (
         <div className="portfolio">
-            <AboutMeSection/>
+            <Landing/>
+            <AboutSection/>
         </div>
     )
 }

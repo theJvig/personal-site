@@ -1,7 +1,7 @@
 @import '../../../vars.scss';
 
 //About Me Section styles
-.about-me-section{ 
+.landing-section{ 
     width: 100vw;
     height: 100vh;
     background-color: $dark-grey;
@@ -9,7 +9,7 @@
     display:flex;
     align-items: center;
 }
-.about-me-container{
+.landing-container{
     width: 800px;
     padding: $sp-16;
 }

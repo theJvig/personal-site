@@ -1,0 +1,70 @@
+@import '../../../vars.scss';
+
+p{
+    color: $light-grey;
+}
+
+.about-me-section{
+    background-color: $dark-grey;
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container{
+    width: 80%;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.about-me-container > * {
+    width: 100%; 
+}
+
+.about-me-header{
+    color: $icy-blue;
+}
+
+.about-me-fun-header{
+    color: $icy-blue;
+}
+
+.about-me-skills-container{
+    padding: 0 40px;
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column;
+    max-height: 725px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-group{
+    margin: 0px; 
+    padding: 0px; 
+    width: 22%; 
+    list-style: none;
+    padding: 0px; 
+    display: block; 
+    .skill-group-grouping{
+        background-color: $light-grey;
+        border-radius: 15px; 
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+}
+
+.skill-group-skill-list{
+    list-style: none;
+    padding: 0px; 
+}
+
+.skill-group-title{ 
+    color: $blue; 
+}
+.skill-group-skill{
+    color: $dark-grey;
+}
