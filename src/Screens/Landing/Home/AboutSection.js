@@ -6,8 +6,8 @@ import '../styles/AboutSection.scss';
 
 const AboutSection = () => {
 
-    const AboutMeTitle = "Hello, My name is Jacob Vig. Welcome to my site!";
-    const AboutMeParagraph = "I have been working as a Front End Web Developer since 2016. I have experience building websites from scratch as well as building them within a cms. I love technology and building beautiful websites. Maybe one day I can build one for you.";
+    const AboutMeTitle = "Hello and welcome! You can call me Jake.";
+    const AboutMeParagraph = "I have been working as a Front End Web Developer since 2016. I have experience building websites from scratch as well as building them within a cms. In my professional career I have worked for both software organizations and marketing agencies. These expereinces help grow my appreciation and love for technology. Having experiences in these enviroments has given me the ability to see development from different agnles and allows me to figure out best soltion for the problem. Most importantly my experiences has given me a love for building beautiful websites. Maybe one day I can build one for you.";
     const AboutMeSkills = [
         {
             type: "Languages",
@@ -39,7 +39,7 @@ const AboutSection = () => {
         },
         {
             type: "ECommerce",
-            skills: ["WooCommerce, Custom Solutions"]
+            skills: ["WooCommerce", "Custom Solutions"]
         },
         {
             type: "SEO",
@@ -70,7 +70,7 @@ const AboutSection = () => {
     );
 
     const AboutMeFunTitle = "Well now that you know all that stuff, how about a little about my personal life.";
-    const AboutMeFunParagraph = "In my free time I spend some of it learning more about my career and I love that, but there is more to me. I enjoy playing video games with my friends and watching anime (I am a nerd, <span className='italics'>shocker</span>). I really enjoy playing discgolf and getting out for some hikes in the woods. I spend time trying new breweries and resturaunts with my lovely significant other. Lastly, I absolutely adore spending time with my two dogs.";
+    const AboutMeFunParagraph = "In my free time I spend some of it learning more about my career and I love that, but there is more to me. I enjoy playing video games with my friends and watching anime (I am a nerd... shocker). I really enjoy playing discgolf and getting out for some hikes, and come winter time I can hopefully hit the slopes. I love to spend time trying new breweries and resturaunts with my lovely significant other. Lastly, I absolutely adore spending time with my two dogs (since I know you are wondering, their names are Ziti and Daisy).";
 
     return (
         <div className="about-me-section">
@@ -78,10 +78,11 @@ const AboutSection = () => {
                 <h2 className="about-me-header">{AboutMeTitle}</h2>
                 <p className="about-me-paragraph">{AboutMeParagraph}</p>
                 <div className="about-me-skills-container">
+                    <h3 className="about-me-skills-title">SKILLS</h3>
                     {SkillsOutput}
                 </div>
                 <h3 className="about-me-fun-header">{AboutMeFunTitle}</h3>
-                <p classname="about-me-fun-paragraph">{AboutMeFunParagraph}</p>
+                <p className="about-me-fun-paragraph">{AboutMeFunParagraph}</p>
             </div>
 
         </div>

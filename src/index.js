@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './Components/Fonts/Barlow/Barlow-Black.ttf';
+import './Components/Fonts/Barlow/Barlow-Bold.ttf';
+import './Components/Fonts/Barlow/Barlow-Thin.ttf';
+import './Components/Fonts/Barlow/Barlow-SemiBold.ttf';
+import './Components/Fonts/Barlow/Barlow-Regular.ttf';
+import './Components/Fonts/Barlow/Barlow-Medium.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

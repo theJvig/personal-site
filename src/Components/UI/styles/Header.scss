@@ -34,11 +34,12 @@
     list-style:none;
 }
 .navigation-list-items .code-array-word{
-    color: $green;
+    color: $orange;
     font-size: $ft-16;
 }
-.navigation-list-items .code-array-word:hover{
-    opacity: .6; 
+.navigation-list-items .code-array-word:hover{ 
+    transition: 250ms;
+    font-size: $ft-20;
 }
 .navigation-list-items .code-array-word span{
     color: $white;

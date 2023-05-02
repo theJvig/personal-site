@@ -1,5 +1,6 @@
 //Colors
 $dark-grey: #232323;
+$medium-grey: #c7c7c7;
 $light-grey: #efefef;
 $black: #000;
 $white: #fff;
@@ -34,6 +35,17 @@ $ft-48: 48px;
 $ft-54: 54px;
 $ft-68: 68px;
 $ft-72: 72px;  
+$ft-100: 100px;
+$ft-150: 150px;
+
+//Fonts
+h1,h2,h3,h4,h5,h6{
+    font-family: Barlow; 
+    font-weight: 600; 
+}
+p,li,ol,span{
+    font-family: Barlow;
+}
 
 .container{
     padding: 0 15%; 

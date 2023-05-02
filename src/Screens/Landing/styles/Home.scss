@@ -12,6 +12,7 @@
 .landing-container{
     width: 800px;
     padding: $sp-16;
+    margin: 0 0 0 15%; 
 }
 .code-snippet{
     font-size: $ft-16;
@@ -22,8 +23,8 @@
 }
 .code-snippet-name{
     color: $icy-blue;
-    font-size: $ft-72;
-    margin-top: 0px;
+    font-size: $ft-150;
+    margin: 0 0 $sp-24;
     span{
         color: $white;
         font-size: $ft-20;
@@ -31,7 +32,7 @@
 }
 .code-array-word{
     list-style: none;
-    color: $orange;
+    color: $yellow;
     font-size: $ft-24;
     span{
         color: $white;
