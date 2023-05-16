@@ -49,3 +49,39 @@ code {
     url("./Components/Fonts/Barlow/Barlow-Medium.ttf") format("truetype");
   font-weight: Medium;
 }
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-Black.ttf") format("truetype");
+  font-weight: Black;
+}
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-Bold.ttf") format("truetype");
+  font-weight: Bold;
+}
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-ExtraBold.ttf") format("truetype");
+  font-weight: ExtraBold;
+}
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-Medium.ttf") format("truetype");
+  font-weight: Medium;
+}
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-Regular.ttf") format("truetype");
+  font-weight: Regular;
+}
+@font-face {
+  font-family: "Sarpanch";
+  src: local("Sarpanch"),
+    url("./Components/Fonts/Sarpanch/Sarpanch-SemiBold.ttf") format("truetype");
+  font-weight: SemiBold;
+}

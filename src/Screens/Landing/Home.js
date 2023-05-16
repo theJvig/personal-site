@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Landing from './Home/Landing';
-import AboutSection from './Home/AboutSection';
+import AboutMeSection from './Home/AboutMeSection';
+import SkillsSection from './Home/SkillsSection';
 import Contact from './Home/Contact';
 import './styles/Home.scss'
 
@@ -9,7 +10,8 @@ const Home = () => {
     return (
         <div className="portfolio">
             <Landing/>
-            <AboutSection/>
+            <AboutMeSection/>
+            <SkillsSection/>
             <Contact/>
         </div>
     )

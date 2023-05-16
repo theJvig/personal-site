@@ -4,7 +4,7 @@ p{
     color: $light-grey;
 }
 
-.about-me-section{
+.skills-section-section{
     background-color: $dark-grey;
     width: 100%; 
     display: flex; 
@@ -14,31 +14,31 @@ p{
     padding: 0 0 200px;
 }
 
-.about-me-container{
+.skills-section-container{
     width: 80%;
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
 }
 
-.about-me-container > * {
+.skills-section-container > * {
     width: 100%; 
 }
 
-.about-me-header{
+.skills-section-header{
     color: $icy-blue;
     width: 60%; 
     text-align: center;
     margin-bottom: 40px;
 }
 
-.about-me-paragraph{
+.skills-section-paragraph{
     width: 60%; 
     text-align: center;
     margin-bottom: 100px;
 }
 
-.about-me-skills-title{
+.skills-section-skills-title{
     color: $light-grey;
     opacity: 0.1;
     letter-spacing: -20px;
@@ -52,17 +52,17 @@ p{
     margin: 0px;
 }
 
-.about-me-fun-header{
+.skills-section-fun-header{
     color: $icy-blue;
     text-align: center;
     margin-top: 150px;
 }
-.about-me-fun-paragraph{
+.skills-section-fun-paragraph{
     max-width:60%;
     text-align: center;
 }
 
-.about-me-skills-container{
+.skills-section-skills-container{
     padding: 0 40px;
     display: flex; 
     flex-wrap: wrap; 

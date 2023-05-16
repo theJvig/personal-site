@@ -1,0 +1,29 @@
+@import '../../../vars.scss';
+
+.about-me-section{
+    background-color: $dark-grey;
+    display:flex;
+}
+.about-me-content{
+    width: 50%;
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 15%;
+}
+.about-me-images{
+    width: 50%;
+}
+
+.about-me-fun-header{
+    color: $icy-blue;
+    text-align: left;
+    max-width: 75%;
+    width: 100%; 
+    margin: 50px 0;
+}
+.about-me-fun-paragraph{
+    max-width:75%;
+    text-align: left;
+    width: 100%; 
+    margin: 0 0 100px; 
+}

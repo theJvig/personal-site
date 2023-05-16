@@ -40,8 +40,21 @@ $ft-150: 150px;
 
 //Fonts
 h1,h2,h3,h4,h5,h6{
-    font-family: Barlow; 
+    font-family: Sarpanch; 
     font-weight: 600; 
+    line-height: 1;
+}
+h1{
+    font-size: $ft-72;
+}
+h2{
+    font-size: $ft-54;
+}
+h3{
+    font-size: $ft-36;
+}
+h4{
+    font-size: $ft-24;
 }
 p,li,ol,span{
     font-family: Barlow;

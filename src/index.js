@@ -9,6 +9,12 @@ import './Components/Fonts/Barlow/Barlow-Thin.ttf';
 import './Components/Fonts/Barlow/Barlow-SemiBold.ttf';
 import './Components/Fonts/Barlow/Barlow-Regular.ttf';
 import './Components/Fonts/Barlow/Barlow-Medium.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-Black.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-Bold.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-ExtraBold.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-Medium.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-Regular.ttf';
+import './Components/Fonts/Sarpanch/Sarpanch-SemiBold.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

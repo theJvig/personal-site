@@ -1,12 +1,12 @@
 import React from 'react'; 
-import '../styles/AboutSection.scss'; 
+import '../styles/SkillsSection.scss'; 
 
 //I should probably look into getting some kind of visuals for this section.
 //Maybe throw up a picture of me, and pictures of the girls. 
 
-const AboutSection = () => {
+const SkillsSection = () => {
 
-    const AboutMeTitle = "Hello and welcome! You can call me Jake.";
+    const AboutMeTitle = "Now for the nitty gritty.";
     const AboutMeParagraph = "I have been working as a Front End Web Developer since 2016. I have experience building websites from scratch as well as building them within a cms. In my professional career I have worked for both software organizations and marketing agencies. These expereinces help grow my appreciation and love for technology. Having experiences in these enviroments has given me the ability to see development from different agnles and allows me to figure out best soltion for the problem. Most importantly my experiences has given me a love for building beautiful websites. Maybe one day I can build one for you.";
     const AboutMeSkills = [
         {
@@ -69,20 +69,15 @@ const AboutSection = () => {
         </ul>
     );
 
-    const AboutMeFunTitle = "Well now that you know all that stuff, how about a little about my personal life.";
-    const AboutMeFunParagraph = "In my free time I spend some of it learning more about my career and I love that, but there is more to me. I enjoy playing video games with my friends and watching anime (I am a nerd... shocker). I really enjoy playing discgolf and getting out for some hikes, and come winter time I can hopefully hit the slopes. I love to spend time trying new breweries and resturaunts with my lovely significant other. Lastly, I absolutely adore spending time with my two dogs (since I know you are wondering, their names are Ziti and Daisy).";
-
     return (
-        <div className="about-me-section">
-            <div className="about-me-container">
-                <h2 className="about-me-header">{AboutMeTitle}</h2>
-                <p className="about-me-paragraph">{AboutMeParagraph}</p>
-                <div className="about-me-skills-container">
-                    <h3 className="about-me-skills-title">SKILLS</h3>
+        <div className="skills-section-section">
+            <div className="skills-section-container">
+                <h2 className="skills-section-header">{AboutMeTitle}</h2>
+                <p className="skills-section-paragraph">{AboutMeParagraph}</p>
+                <div className="skills-section-skills-container">
+                    <h3 className="skills-section-skills-title">SKILLS</h3>
                     {SkillsOutput}
                 </div>
-                <h3 className="about-me-fun-header">{AboutMeFunTitle}</h3>
-                <p className="about-me-fun-paragraph">{AboutMeFunParagraph}</p>
             </div>
 
         </div>
@@ -90,4 +85,4 @@ const AboutSection = () => {
 
 }
 
-export default AboutSection; 
+export default SkillsSection; 
