@@ -3,15 +3,29 @@
 .about-me-section{
     background-color: $dark-grey;
     display:flex;
+    padding: 150px 15%;
+    position:relative;
 }
 .about-me-content{
     width: 50%;
     display:flex;
     flex-wrap:wrap;
-    padding-left: 15%;
 }
 .about-me-images{
     width: 50%;
+}
+.about-me-skills-title{
+    color: $light-grey;
+    opacity: 0.1;
+    letter-spacing: -20px;
+    line-height: 234px;
+    font-size: 300px;
+    font-weight: 900;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(85%, -15%);
+    margin: 0px;
 }
 
 .about-me-fun-header{

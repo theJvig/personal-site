@@ -1,4 +1,5 @@
 import "./styles/Header.scss"
+import logo from "../Images/Logos/JV - Dev and Design Logo.png"; 
 
 const Header = () => {
 
@@ -32,7 +33,9 @@ const Header = () => {
         <div className="header">
             <div className="header-content container">
                 <div className="logo">
-                    Placeholder
+                    <a className="logo-link" href="/">
+                        <img className="logo-img" src={logo} alt="J V logo" /> 
+                    </a>
                 </div>
                 <div className="navigation-container">
                     <p className="code-snippet">let <span className="variable-color">Navigation</span> = [</p>
