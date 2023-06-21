@@ -1,5 +1,9 @@
 @import './vars.scss';
 
+.App{
+  overflow:hidden;
+}
+
 body {
   background-color: $light-grey;
 }
