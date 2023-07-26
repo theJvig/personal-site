@@ -11,22 +11,44 @@ const formReducer = (state, event) => {
 
 export const ContactForm = () => {
     const [formData, setFormData] = useReducer(formReducer, {}); 
-    const [firstName, lastName, email, shortAnser ] = useState(); 
+    //const [firstName, lastName, email, shortAnser ] = useState(); 
     const [submitting, setSubmitting] = useState(false);
+    const googleFormId = '1FAIpQLSd_P4YE2xPFUrXjJ0eLZ90pnXf0DURMOsxm5s9rI6neT7YITA';
 
     const handleSubmit = event => {
         event.preventDefault(); 
+        console.log(formData);
         setSubmitting(true);
 
-        setTimeout(() => {
-            setSubmitting(false);
-        }, 3000);
+        const formUrl = "https://docs.google.com/forms/u/0/d/e/" + googleFormId + "/formResponse?";
+        const queryURLData = new URLSearchParams(formData).toString(); 
+        const formPostUrl = formUrl + queryURLData; 
+        const requestOptions = {
+            method: "POST",
+            mode: "no-cors",
+            headers: {"content-Type": "application/json"}
+        }
+
+        console.log(formPostUrl);
+
+        fetch(formPostUrl, requestOptions)
+            .then(response => {
+                if(response.status === 200){
+                    console.log('SUCCESS!!!!');
+                } else { 
+                    console.log('Failed');
+                    console.log(response.status);
+                    
+                }
+            }).then((data) => {
+                setSubmitting(false); 
+            }); 
     };
 
     const handleChange = event => {
         setFormData({
             name: event.target.name,
-            value: event.target.value
+            value: event.target.value,
         });
     }
 
@@ -43,35 +65,37 @@ export const ContactForm = () => {
                 </div>
             }
             <form onSubmit={handleSubmit}>
-                <label>First Name:
-                    <input
-                        type="text" 
-                        name="firstName"
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>Last Name:
-                    <input
-                        type="text"
-                        name="lastName"
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>Email:
-                    <input
-                        type="text"
-                        name="email"
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>How Can I help?
-                    <input
-                        type="textarea"
-                        name="shortAnser"
-                        onChange={handleChange}
-                    />
-                </label>
-                <button type="submit">Submit</button>
+                <input 
+                    class="input" 
+                    type="text"
+                    name="entry.1830454949"
+                    placeholder="First Name"
+                    onChange={handleChange}
+                />
+                <input 
+                    class="input" 
+                    type="text"
+                    name="entry.613580766" 
+                    placeholder="Last Name" 
+                    onChange={handleChange}
+                />
+                <input 
+                    class="input"
+                    type="text"
+                    name="entry.47438426"
+                    placeholder="Email"
+                    onChange={handleChange}
+                />
+                <textarea 
+                    class="input"
+                    type="textarea"
+                    name="entry.1631848909"
+                    placeholder="How Can I help?"
+                    onChange={handleChange}
+                />
+                <button class="button" type="submit" >
+                    Submit
+                </button>
             </form>
         </div>
     )
